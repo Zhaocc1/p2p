@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 配置应用名称 -->
+    <dubbo:application name="p2p"/>
+    <!-- 配置注册中心 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.239.128:2181"/>
+
+    <dubbo:reference interface="com.zcc.p2p.service.loan.LoanInfoService"
+                     id="loanInfoService" check="false" version="1.0.0"></dubbo:reference>
+
+    <dubbo:reference interface="com.zcc.p2p.service.user.UserService"
+                     id="userService" check="false" version="1.0.0"></dubbo:reference>
+
+    <dubbo:reference interface="com.zcc.p2p.service.loan.BidInfoService"
+                     id="bidInfoService" check="false" version="1.0.0"></dubbo:reference>
+
+    <dubbo:reference interface="com.zcc.p2p.service.user.FinanceAccountService"
+                     id="financeAccountService" check="false" version="1.0.0"></dubbo:reference>
+
+    <dubbo:reference interface="com.zcc.p2p.service.tool.RedisService"
+                     id="redisService" check="false" version="1.0.0"></dubbo:reference>
+
+    <dubbo:reference interface="com.zcc.p2p.service.user.IncomeRecordService"
+                     id="incomeRecordService" check="false" version="1.0.0"></dubbo:reference>
+
+</beans>

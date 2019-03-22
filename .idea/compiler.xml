@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HttpClient" />
+        <module name="p2p-common" />
+        <module name="p2p-dataservice" />
+        <module name="p2p-httpClient" />
+        <module name="p2p-interface" />
+        <module name="p2p-mavenGenerator" />
+        <module name="p2p-pay" />
+        <module name="p2p-timer" />
+        <module name="p2p-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HttpClient" target="1.8" />
+      <module name="p2-phttpClient" target="1.8" />
+      <module name="p2p-common" target="1.8" />
+      <module name="p2p-dataservice" target="1.8" />
+      <module name="p2p-httpClient" target="1.8" />
+      <module name="p2p-interface" target="1.8" />
+      <module name="p2p-mavenGenerator" target="1.8" />
+      <module name="p2p-parent" target="1.8" />
+      <module name="p2p-pay" target="1.8" />
+      <module name="p2p-timer" target="1.8" />
+      <module name="p2p-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

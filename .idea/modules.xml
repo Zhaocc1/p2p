@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../04-httpclient/HttpClient/HttpClient.iml" filepath="$PROJECT_DIR$/../04-httpclient/HttpClient/HttpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-common/p2p-common.iml" filepath="$PROJECT_DIR$/p2p-common/p2p-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-dataservice/p2p-dataservice.iml" filepath="$PROJECT_DIR$/p2p-dataservice/p2p-dataservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-httpClient/p2p-httpClient.iml" filepath="$PROJECT_DIR$/p2p-httpClient/p2p-httpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-interface/p2p-interface.iml" filepath="$PROJECT_DIR$/p2p-interface/p2p-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-mavenGenerator/p2p-mavenGenerator.iml" filepath="$PROJECT_DIR$/p2p-mavenGenerator/p2p-mavenGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-parent/p2p-parent.iml" filepath="$PROJECT_DIR$/p2p-parent/p2p-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-pay/p2p-pay.iml" filepath="$PROJECT_DIR$/p2p-pay/p2p-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-timer/p2p-timer.iml" filepath="$PROJECT_DIR$/p2p-timer/p2p-timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-web/p2p-web.iml" filepath="$PROJECT_DIR$/p2p-web/p2p-web.iml" />
+    </modules>
+  </component>
+</project>

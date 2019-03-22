@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 服务提供者：应用名称 -->
+    <dubbo:application name="dataservice"/>
+    <!-- 配置 zookeeper 注册中心 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.239.128:2181"/>
+
+    <!--产品服务-->
+    <dubbo:service interface="com.zcc.p2p.service.loan.LoanInfoService"
+                   ref="loanInfoServiceImpl" version="1.0.0" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--用户服务-->
+    <dubbo:service interface="com.zcc.p2p.service.user.UserService" version="1.0.0"
+                    ref="userServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--投资服务-->
+    <dubbo:service interface="com.zcc.p2p.service.loan.BidInfoService" version="1.0.0"
+                   ref="bidInfoServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--账户服务-->
+    <dubbo:service interface="com.zcc.p2p.service.user.FinanceAccountService" version="1.0.0"
+                   ref="financeAccountServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--Redis服务-->
+    <dubbo:service interface="com.zcc.p2p.service.tool.RedisService" version="1.0.0"
+                   ref="redisServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--收益记录服务-->
+    <dubbo:service interface="com.zcc.p2p.service.user.IncomeRecordService" version="1.0.0"
+                   ref="incomeRecordServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+    <!--用户充值服务-->
+    <dubbo:service interface="com.zcc.p2p.service.user.RechargeRecordService" version="1.0.0"
+                   ref="rechargeRecordServiceImpl" timeout="15000" retries="0" delay="-1"></dubbo:service>
+
+</beans>
